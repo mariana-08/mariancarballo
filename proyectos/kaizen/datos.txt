@@ -1,0 +1,25 @@
+
+NIC:
+Nombre y Apellido: ANTUNES LUCAS
+CUIT/CUIL/ID: 20337817409
+Fecha de Alta: 04/05/2018
+Fecha de vencimiento: 04/05/2019
+
+
+-------------------------
+
+Donweb:
+FTP:
+DATOS DE ACCESO FTP:
+
+HOST: 	c1370336.ferozo.com
+PUERTO: 	21
+USUARIO FTP: 	c1370336
+CONTRASEÑA: 	00NAkafopu   
+
+
+Datos de acceso al Panel de Hosting
+URL: 	http://c1370336.ferozo.com:2082
+Usuario: 	c1370336
+Contraseña: 	00NAkafopu 
+

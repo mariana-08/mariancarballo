@@ -1,0 +1,68 @@
+NIC 
+
+Uuario:  marianacar
+contraseña: mariana2015 (MAYUS)
+
+
+
+host
+
+
+usuario: mariana_carballofarias@hotmail.com	
+contraseña: MARIANA2015
+
+
+
+PARA FILEZILLA 
+Nombre de Host FTP Temporal: 31.170.165.144
+Nombre de Host FTP completo: ftp.crath.com
+Nombre de Usuario FTP: u332191837
+Contraseña FTP: MARIANA2015
+
+
+BASE 
+u469747730_CRATH
+u469747730_CRATH
+CONTRASEÑA MARIANA2015
+
+
+
+esto es en conect.php 
+
+<?php
+$conexion = mysqli_connect('localhost','root','', 'crath') or die (mysqli_error($conexion));
+?>
+
+
+<?php
+$conexion = mysqli_connect('host133.baires01.com.ar','bynnxgej_crath','EROS2015', 'bynnxgej_crath') or die (mysqli_error($conexion)); */
+?>
+
+
+
+
+esto es de conexion.php
+
+
+<?php
+Creamos una conexión
+$conexion = mysqli_connect('localhost', 'root', '', 'crath');
+//Verificamos si funcionó
+If(mysqli_connect_errno($conexion)){
+     //Si no funcionó, mostramos el mensaje de error
+    echo "No se pudo conectar porque: " .
+       mysqli_connect_error();
+
+ }
+?>
+
+ <?php 
+Creamos una conexión
+$conexion = mysqli_connect(('host133.baires01.com.ar','bynnxgej_crath','EROS2015', 'bynnxgej_crath');
+//Verificamos si funcionó
+If(mysqli_connect_errno($conexion)){
+     //Si no funcionó, mostramos el mensaje de error
+    echo "No se pudo conectar porque: " .
+       mysqli_connect_error();
+
+ }

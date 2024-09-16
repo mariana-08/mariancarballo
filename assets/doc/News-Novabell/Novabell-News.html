@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Newsletter -  NovaBell</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+h1 {color: #0080C0; font-family:Arial, Helvetica, sans-serif;
+font-weight:800;
+font-size: 36px; }
+        .contenedor {
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        .encabezado {
+            width: 100%;
+            height: 100px;
+            border: 0;
+            cellpading: 0;
+            cellspacing: 0;
+            background-color: white;
+        }
+
+        .logo {
+            width: 50%;
+            margin-top: 2%;
+            height: auto;
+            float: inherit;
+        }
+
+        .cajames {
+            width: 50%;
+            float: inherit;
+        }
+
+        .mes {
+            color: #29C3EC;
+            font-size: 35px;
+            text-align: right;
+        }
+
+        .mis {
+            color: black;
+            font-size: 35px;
+            text-align: right;
+        }
+
+        .nota1 {
+            width: 100%;
+            background-color: #F1F2F2;
+            margin-top: 1%;
+            float: inherit;
+        }
+
+        .imgnota1 {
+            width: 94%;
+            height: auto;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            float: inherit;
+        }
+
+        .cuerponota1 { color: #434041;
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+            float: inherit;
+        }
+
+        .titulonota1 {color: #434041;
+            font-weight: 900;
+            font-size: 32px;
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+            float: inherit;
+        }
+
+        .textonota1 {
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+            float: inherit;
+        }
+
+        .boton1 {
+            width: 16%;
+            border: 0;
+            text-align: center;
+            float: inherit;
+        }
+
+        .nota2 {
+            width: 100%;
+            background-color: #F1F2F2;
+            margin-top: 3%;
+        }
+
+        .imgnota2 {
+            width: 50%;
+            height:100%;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            float: inherit;
+        }
+
+        .cuerponota2 {
+            width: 50%;
+            height: auto;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+
+            float: inherit;
+        }
+
+        .cuerponota3 {
+            width: 50%;
+            height: auto;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+
+            float: inherit;
+        }
+
+        .titulonota { color: #434041;
+            font-weight: 900;
+            font-size: 32px;
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .textonota { color: #434041;
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .boton2 {
+            width: 25%;
+            margin-left: 37.5%;
+            margin-right: 37.5%;
+            margin-bottom: 3%;
+            margin-top: 3%;
+            border: 0;
+            text-align: center;
+        }
+
+        .nota3 {
+            width: 100%;
+            background-color: #F1F2F2;
+            margin-top: 0.3%;
+        }
+
+        .imgnota3 {
+            width: 50%;
+            height: auto;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            /*background-color: #10abc6;*/
+            float: inherit;
+        }
+        
+        .nota31 {
+            width: 100%;
+            background-color: #F1F2F2;
+            margin-top: 0.3%;
+        }
+
+        .imgnota31 {
+            width: 50%;
+            height: auto;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            /*background-color: #10abc6;*/
+            float: inherit;
+        }
+        
+        
+        .nota32 {
+            width: 100%;
+            background-color: #F1F2F2;
+            margin-top: 0.3%;
+        }
+
+        .imgnota32 {
+            width: 50%;
+            height: auto;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            /*background-color: #10abc6;*/
+            float: inherit;
+        }
+        
+
+        .cajanotas4y5 {
+            width: 100%;
+            margin-top: 3%;
+            float: inherit;
+        }
+
+        .nota4 {
+            width: 49%;
+            height: auto;
+            border: 0;
+            background-color: #10abc6;
+            float: inherit;
+        }
+
+        .titulonotablanco {
+            font-weight: 900;
+            font-size: 32px;
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: white;
+        }
+
+        .textonotablanco {
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: white;
+        }
+
+        .nota5 {
+            width: 49%;
+            height: auto;
+            border: 0;
+            background-color: #10abc6;
+            float: inherit;
+        }
+        
+        .cajanota6 {
+            width: 100%;
+            margin-top: 3%;
+            float: inherit;
+        }
+
+        .nota6 {            
+            height: auto;
+            border: 0;
+            background-color: #10abc6;
+            float: inherit;
+        }
+        
+        .boton3 {
+            width: 16%;
+            border: 0;
+            text-align: center;            
+            margin-left: 42%;
+            margin-right: 38%;
+            margin-bottom: 3%;
+            margin-top: 3%;
+            float: inherit;
+        }
+        
+        
+            
+        .footer {
+            width: 100%;
+            border: 0;
+            background-color: white;
+            color: #434041;
+            float: inherit;
+        }
+
+        .footercol1 {
+            width: 30%;
+            float: inherit;
+        }
+
+        .footercol2 {
+            width: 40%;
+            float: inherit;
+        }
+
+        .footercol3 {
+            width: 30%;
+            text-align: right;
+            float: inherit;
+        }
+
+        .rrss { text-align:center;
+            list-style-type: none;
+            display: inline;
+            padding-right: 3%;
+        }
+
+        .icorrss {
+            width: 20%;
+            max-height: 40px;
+        }
+
+        @media screen and (max-width:1100px) {
+            .contenedor {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .logo {
+                width: 100%;
+                margin-top: 2%;
+                height: auto;
+                float: left;
+                text-align: center;
+            }
+
+            .cajames {
+                width: 100%;
+                float: left;
+                text-align: center;
+            }
+
+            .mes {
+                color: #29C3EC;
+                font-size: 35px;
+                text-align: center;
+            }
+
+            .mis {
+                color: black;
+                font-size: 35px;
+                text-align: center;
+            }
+
+            .imgnota2 {
+                width: 94%;
+                height: auto;
+                margin-left: 3%;
+                margin-right: 3%;
+                background-color: #10abc6;
+                float: left;
+            }
+
+            .cuerponota2 {
+                width: 96%;
+                height: auto;
+                margin-left: 2%;
+                margin-right: 2%;
+                float: left;
+            }
+
+            .cuerponota3 {
+                width: 96%;
+                height: auto;
+                margin-left: 2%;
+                margin-right: 2%;
+                float: left;
+            }
+
+            .imgnota3 {
+                width: 94%;
+                height: auto;
+                margin-top: 3%;
+                margin-left: 3%;
+                margin-right: 3%;
+                background-color: #10abc6;
+                float: left;
+            }
+            
+            .imgnota31 {
+                width: 94%;
+                height: auto;
+                margin-top: 3%;
+                margin-left: 3%;
+                margin-right: 3%;
+                background-color: #10abc6;
+                float: left;
+            }
+            
+            .imgnota32 {
+                width: 94%;
+                height: auto;
+                margin-top: 3%;
+                margin-left: 3%;
+                margin-right: 3%;
+                background-color: #10abc6;
+                float: left;
+            }
+            
+            
+            .nota4 {
+                width: 100%;
+                height: auto;
+                border: 0;
+                background-color: #10abc6;
+                float: left;
+            }
+
+            .nota5 {
+                width: 100%;
+                height: auto;
+                border: 0;
+                background-color: #10abc6;
+                float: left;
+                margin-top: 0.3%;
+            }
+
+            .footercol1 {
+                width: 100%;
+                float: left;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .footercol2 {
+                width: 100%;
+                float: left;
+                align-content: center;
+            }
+
+            .footercol3 {
+                width: 100%;
+                text-align: right;
+                float: left;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .mis {
+                display: none;
+            }
+
+            .boton1 {
+                width: 25%;
+                border: 0;
+                text-align: center;
+                float: inherit;
+            }
+
+            .boton2 {
+                width: 25%;
+                border: 0;
+                text-align: center;
+                float: inherit;
+            }
+            
+            .boton3 {
+                width: 25%;
+                border: 0;
+                text-align: center;
+                float: inherit;
+            }
+
+
+            .textonota { color: #434041;
+                width: 94%;
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--CUERPO DEL BOLETIN-->
+
+    <!--ENCABEZADO-->
+    <div class="contenedor">
+
+        <table class="encabezado">
+            <tr>
+                <td class="logo">
+                  <h1>NOVABELL</h1>
+                </td>
+                <td class="cajames" width="50%">
+                    <p class="mes"><strong> </strong>2020 <strong class="mis">│</strong></p>
+                </td>
+            </tr>
+        </table>
+
+        <!--FIN ENCABEZADO-->
+        <!---NOTA Nº 1---->
+
+        <span class="textonota1"><img src="img/img1.jpg" width="95%"/> </span>
+        
+
+        <!---NOTA Nº 1---->
+
+        <!---NOTA Nº 2---->
+
+<table class="nota2">
+            <tr>
+                <td class="imgnota2">
+
+                    <!---IMAGEN NOTA Nº 2---->
+
+                    <img src= "img/img07.png" width="65%" />
+                    
+                    <!---FIN DE IMAGEN NOTA Nº 2---->
+
+                </td>
+              <td class="cuerponota2">
+
+                    <!---TITULO NOTA Nº 2---->
+
+                    <p class="titulonota">Belleza  de manos</p>
+
+                    <!---TITULO NOTA Nº 2---->
+                    <!---NOTA Nº 2---->
+
+                    <p class="textonota"> Tenemos nuevos productos para <a href="">belleza de manos,  cremas pos manicuria, etc</a>.</p>
+
+                  <!---NOTA Nº 2---->
+                  <!---BOTON NOTA Nº 2----><!---BOTON NOTA Nº 2---->
+
+                </td>
+
+
+            </tr>
+        </table>
+
+        <!---FIN NOTA Nº 2---->
+
+        <!---NOTA Nº 3---->
+
+<table class="nota3">
+            <tr>
+                <td class="imgnota3">
+
+                    <!---IMAGEN NOTA Nº 3---->
+                  
+                    <img src= "img/img08.png" width="65%" />                    
+
+                    <!---FIN DE IMAGEN NOTA Nº 3---->
+
+                </td>
+              <td class="cuerponota3">
+
+                    <!---TITULO NOTA Nº 3---->
+
+                    <p class="titulonota">Dermocosmetica</p>
+
+                    <!---TITULO NOTA Nº 3---->
+                    <!---NOTA Nº 3---->
+
+                    <p class="textonota"> Conocé los tratamientos de dermocosmeticas que ya estan disponibles <a href="">para cuidarnos este verano.</a> </p>
+
+                  <!---NOTA Nº 3---->
+                  <!---BOTON NOTA Nº 3----><!---BOTON NOTA Nº 3---->
+
+                </td>
+
+
+            </tr>
+        </table> 
+
+        <!---FIN NOTA Nº 3---->
+        
+        <!---NOTA Nº 4---->
+
+        <table class="nota31">
+            <tr>
+                <td class="imgnota31">
+
+                    <!---IMAGEN NOTA Nº 4---->
+
+                    <img  src="img/cuerpos.jpg"  width="100%" />
+
+                    <!---FIN DE IMAGEN NOTA Nº 4---->
+
+                </td>
+            </tr>
+        </table>   
+        <!---FIN NOTA Nº 4---->
+        
+
+
+       
+
+        <!--FOOTER-->
+
+        <table class="footer">
+            <tr>
+                <td width="30%" class="footercol1">
+                    <p><strong>4254-6532<br>
+                  info@novabell.com.ar </strong></p>
+                </td>
+                <td width="39%" class="footercol2">
+                    <ul>
+                        <li class="rrss">
+                            <a href="#"><img src="img/socials03.png"  alt="Logo de Instagram"/></a>
+                           </li>
+                        <li class="rrss">    
+                     
+                      <a href="#"><img src="img/socials02.png" alt="Logo de Facebook" /></a></li>
+                    </ul>
+                </td>
+                <td width="31%" class="footercol3">
+                    <p><strong>xxxxxxx, Zona Oeste Buenos Aires, Argentina</strong></p>
+                </td>
+            </tr>
+        </table>
+
+        <!--FOOTER-->
+
+    </div>
+
+</body>
+
+</html>
